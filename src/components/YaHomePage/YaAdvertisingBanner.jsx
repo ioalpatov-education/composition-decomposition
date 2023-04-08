@@ -3,7 +3,14 @@ import PropTypes from "prop-types";
 /**
  * Компонент рекламного баннера
  */
-const YaAdvertisingBanner = ({ advertising }) => {};
+const YaAdvertisingBanner = ({ advertising }) => {
+  const { bannerImg, altText, link } = advertising;
+  return (
+    <a href={link}>
+      <img src={bannerImg} alt={altText} />
+    </a>
+  );
+};
 
 YaAdvertisingBanner.propTypes = {
   /**

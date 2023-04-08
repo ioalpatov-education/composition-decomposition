@@ -1,6 +1,8 @@
 /**
  * Компонент виртуальной клавиатуры
  */
-const YaKeyboard = () => {};
+const YaKeyboard = () => {
+  return <div></div>;
+};
 
 export default YaKeyboard;

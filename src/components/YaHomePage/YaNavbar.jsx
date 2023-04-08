@@ -1,6 +1,8 @@
 /**
  * Компонент навигационной панели над поисковой строкой
  */
-const YaNavbar = () => {};
+const YaNavbar = () => {
+  return <div></div>;
+};
 
 export default YaNavbar;

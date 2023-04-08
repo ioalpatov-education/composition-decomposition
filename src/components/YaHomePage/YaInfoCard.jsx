@@ -5,6 +5,17 @@ import PropTypes from "prop-types";
  */
 const YaInfoCard = (props) => {
   const { children, title, imgSrc, imgAlt } = props;
+  const img = !!imgSrc ? <img src={imgSrc} alt={imgAlt} /> : null;
+
+  return (
+    <div>
+      <header>
+        {img}
+        {title}
+      </header>
+      <div>{children}</div>
+    </div>
+  );
 };
 
 YaInfoCard.propTypes = {
